@@ -1,0 +1,32 @@
+.site-card-wrapper {
+    padding: 30px;
+    background: #ececec;
+}
+
+.card-title-date {
+    display: flex;
+    align-items: flex-start;
+    color: grey;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.ant-layout-sider {
+    background: #fff !important;
+    flex: 0 0 50px !important;
+    min-width: 90px !important;
+    width: 10px;
+}
+
+.ant-layout-content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.day-weather-img {
+    width: 24px;
+    height: 24px;
+}
