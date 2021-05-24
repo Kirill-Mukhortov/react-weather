@@ -3,11 +3,9 @@ import React from 'react'
 import shortid from 'shortid'
 import { Row } from 'antd'
 import Day from '../Day/Day'
-import Chart from '../Chart/Chart'
 import 'antd/dist/antd.css'
 
 const DaysList = ({ weather }) => {
-  console.log('DAY LIST')
   const optionsForParse = { year: 'numeric', month: 'numeric', day: 'numeric' }
   const options = { weekday: 'long', month: 'long', day: 'numeric' }
   const city = weather?.city?.name
@@ -92,16 +90,15 @@ const DaysList = ({ weather }) => {
   parseWeather(nextDate(4), nextDateForCard(4))
   parseWeather(nextDate(5), nextDateForCard(5))
 
-  const dataForChart = weather?.list
-  // console.log('dataForChart', dataForChart)
+  // const dataForChart = weather?.list
 
   return (
     <>
-      {
-        dataForProps
-          ? <Chart dataForProps={dataForProps} />
-          : <p>Загрузка...</p>
-       }
+      {/* { */}
+      {/*  dataForProps */}
+      {/*    ? <Chart dataForProps={dataForProps} /> */}
+      {/*    : <p>Загрузка...</p> */}
+      {/* } */}
       <Row justify="center" gutter={[16, 16]}>
         {
         dataForProps.length

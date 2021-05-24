@@ -4,7 +4,7 @@ import { Alert } from 'antd'
 import DaysList from './components/DaysList/DaysList'
 import FormHeader from './components/FormHeader/FormHeader'
 import GoogleMaps from './components/Map/GoogleMaps'
-import Chart from './components/Chart/Chart'
+// import Chart from './components/Chart/Chart'
 import './App.css'
 import 'antd/dist/antd.css'
 
@@ -14,9 +14,7 @@ function App() {
   const [geoPosition, setGeoPosition] = useState({ lat: null, lng: null })
   const [geoStatus, setGeoStatus] = useState(false)
   const [weatherStatus, setWeatherStatus] = useState(false)
-  console.log('===>>>>', weather)
 
-  console.log('APP', weather.list)
   const getUserCoordinates = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
@@ -70,7 +68,7 @@ function App() {
   return (
     <>
       <FormHeader submitHandler={submitHandler} inputHandler={inputHandler} input={input} />
-      {/* <GoogleMaps geoPosition={geoPosition} /> */}
+      <GoogleMaps geoPosition={geoPosition} />
       {/* <Chart weather={weather} /> */}
       {
         geoStatus || weatherStatus

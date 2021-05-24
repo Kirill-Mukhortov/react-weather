@@ -4,7 +4,6 @@ import GoogleMapReact from 'google-map-react'
 import './GoogleMaps.css'
 
 const GoogleMaps = ({ geoPosition }) => {
-  console.log('MAP')
   const [cordinates, setCordinates] = useState([10, 10])
 
   useEffect(() => {

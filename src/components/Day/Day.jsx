@@ -7,7 +7,6 @@ import 'antd/dist/antd.css'
 const { Content, Sider } = Layout
 
 const Day = ({ date, min, max, city, minFeel, maxFeel, humidity, img }) => {
-  console.log('DAY')
   const currentHour = new Date().getHours()
 
   return (
